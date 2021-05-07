@@ -45,7 +45,7 @@ public class Reader {
                 String duration = tokens[9];
                 Set<String> listed_in = new HashSet<>(Arrays.asList(tokens[10].split(",")));
                 String description = tokens[11];
-                System.out.println("id is = " + tokens[0]);
+                //System.out.println("id is = " + tokens[0]);
                 DateFormat format = new SimpleDateFormat("MMMM d, yyyy", Locale.ENGLISH);
                 Date date;
                 date = !tokens[6].isEmpty() ? format.parse(tokens[6].replaceAll("\"","").trim()) : null;
